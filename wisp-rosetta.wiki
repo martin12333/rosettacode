@@ -1,0 +1,76 @@
+-------------------------------------------------------------------
+    {
+        "key": "f8",
+          "command": "workbench.action.terminal.runSelectedText",
+            "when": "editorTextFocus "}
+
+
+cd ~/wisp
+guile -L . --language=wisp
+
+* 3 6
+
+
+
+-----------------------------------------------------------------------
+;(display (+ (read) (read)))
+
+=={{header|Wisp}}==
+{{trans|Scheme}}
+<lang scheme>
+display : + (read) (read)
+
+
+314
+315
+;; displays 629
+</lang>
+
+added Wisp
+Wisp is trans of Scheme
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------
+
+read-options
+
+
+read-options 'help
+
+
+
+copy                    no      Copy source code expressions.
+positions               yes     Record positions of source code expressions.
+case-insensitive        no      Convert symbols to lower case.
+
+keywords                #f      Style of keyword recognition: #f, 'prefix or 'postfix.
+r6rs-hex-escapes        no      Use R6RS variable-length character and string hex escapes.
+square-brackets         yes     Treat `[' and `]' as parentheses, for R6RS
+compatibility.
+hungry-eol-escapes      no      In strings, consume leading whitespace after an escaped end-of-line.
+curly-infix             yes     Support SRFI-105 curly infix expressions.
+
+!!!r7rs-symbols            no      Support R7RS |...| symbol notation.
+
+
+
+
